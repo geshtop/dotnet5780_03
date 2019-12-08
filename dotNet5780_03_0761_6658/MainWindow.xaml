@@ -1,0 +1,26 @@
+﻿<Window x:Class="dotNet5780_03_0761_6658.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dotNet5780_03_0761_6658"
+        mc:Ignorable="d"
+        Title="מאגר הצימרים הגדול" Height="640" Width="800">
+    <Grid Name ="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="UpGrid" HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Stretch" Width="auto" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" SelectionChanged="CbHostList_SelectionChanged_1" />
+            <TextBox Name ="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="{Binding Path = HostName}" VerticalAlignment="Stretch" FontSize="22" FontFamily="David"/>
+        </Grid>
+
+    </Grid>
+</Window>

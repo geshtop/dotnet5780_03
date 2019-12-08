@@ -1,0 +1,17 @@
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\bin\Debug\dotNet5780_03_0761_6658.exe.config
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\bin\Debug\dotNet5780_03_0761_6658.exe
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\bin\Debug\dotNet5780_03_0761_6658.pdb
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\HostingUnitUserControl.g.cs
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\MainWindow.g.cs
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\App.g.cs
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658_MarkupCompile.cache
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658_MarkupCompile.lref
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\HostingUnitUserControl.baml
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\MainWindow.baml
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.g.resources
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.Properties.Resources.resources
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.csproj.GenerateResource.cache
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.csproj.CoreCompileInputs.cache
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.exe
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.pdb
+C:\rivki\projects\YearB\dotNet5780_03_0761_6658\dotNet5780_03_0761_6658\obj\Debug\dotNet5780_03_0761_6658.csprojAssemblyReference.cache
