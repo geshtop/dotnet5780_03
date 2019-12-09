@@ -19,7 +19,7 @@
         <Label Content="מספר חדרים" HorizontalAlignment="Left" Margin="118,79,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbRooms" HorizontalAlignment="Left" Height="31" Margin="40,82,0,0" TextWrapping="Wrap" Text="{Binding Rooms}" VerticalAlignment="Top" Width="68"/>
         <CheckBox x:Name="IsSwimingPool" Content="בריכה" HorizontalAlignment="Left" Margin="38,134,0,0" VerticalAlignment="Top"  IsChecked="{Binding HasSwimmingPool}" Height="36" Width="109"/>
-        <Viewbox x:Name="vbCalendar" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="81.6,32,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill"/>
-        <Button x:Name="btOrder" Content="הזמן" Grid.Column="1" HorizontalAlignment="Left" Margin="81.6,163,0,0"  VerticalAlignment="Top" Width="75" Click="BtOrder_Click_1"/>
-     </Grid>
+        <Viewbox x:Name="vbCalendar" Grid.Column="1" HorizontalAlignment="Left" Height="141" Margin="36.6,10,0,0" VerticalAlignment="Top" Width="190" Stretch="Fill"/>
+        <Button x:Name="btOrder" Content="הזמן" Grid.Column="1" HorizontalAlignment="Left" Margin="36.6,156,0,0"  VerticalAlignment="Top" Width="190" Click="BtOrder_Click_1" Height="25" FontSize="18"/>
+    </Grid>
 </UserControl>
