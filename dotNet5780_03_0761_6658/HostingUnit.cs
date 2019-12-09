@@ -8,9 +8,9 @@ namespace dotNet5780_03_0761_6658
 {
     public class HostingUnit
     {
-        public string UnitName;
-        public int Rooms;
-        public bool IsSwimingPool;
+        public string UnitName { get; set; }
+        public int Rooms { get; set; }
+        public bool HasSwimmingPool { get; set; }
         public List<DateTime> AllOrders { get; set; }
         public List<string> Uris { get; set; }
     }

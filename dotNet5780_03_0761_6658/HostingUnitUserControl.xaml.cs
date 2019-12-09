@@ -25,11 +25,25 @@ namespace dotNet5780_03_0761_6658
         Image MyImage;
         private Calendar MyCalendar;
         public HostingUnit CurrentHostingUnit { get; set; }
+
+        private string _label = "adsf";
+        public String ggg
+        {
+            get { return _label; }
+            set { _label = value; }
+        }
+
+       
         public HostingUnitUserControl(HostingUnit hostUnit)
         {
+           
             vbImage = new Viewbox();
             InitializeComponent();
             this.CurrentHostingUnit = hostUnit;
+            this.DataContext = this;
+             
+    
+            
             UserControlGrid.DataContext = hostUnit;
             MyCalendar = CreateCalendar();
             vbCalendar.Child = null;
@@ -49,6 +63,7 @@ namespace dotNet5780_03_0761_6658
             MyImage = CreateViewImage();
             vbImage.Child = null;
             vbImage.Child = MyImage;
+
         }
         private Image CreateViewImage()
         {
@@ -77,7 +92,7 @@ namespace dotNet5780_03_0761_6658
         }
         private void SetBlackOutDates()
         {
-            foreach(DateTime date in CurrentHostingUnit.AllOrders)
+            foreach (DateTime date in CurrentHostingUnit.AllOrders)
             {
                 MyCalendar.BlackoutDates.Add(new CalendarDateRange(date));
             }
@@ -94,9 +109,9 @@ namespace dotNet5780_03_0761_6658
             SetBlackOutDates();
         }
 
-        private void AddCurrentList(List<DateTime>tList)
+        private void AddCurrentList(List<DateTime> tList)
         {
-            foreach(DateTime d in tList)
+            foreach (DateTime d in tList)
             {
                 CurrentHostingUnit.AllOrders.Add(d);
             }
