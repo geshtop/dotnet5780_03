@@ -20,27 +20,25 @@ namespace dotNet5780_03_0761_6658
     /// </summary>
     public partial class MainWindow : Window
     {
-       public   List<Host> hostsList { get; set; }
+        public List<Host> HostsList { get; set; }
         private Host currentHost;
         public MainWindow()
         {
-            hostsList = new List<Host>();
+            HostsList = new List<Host>();
             InitializeComponent();
-            var host= new Host()
+            var host = new Host()
             {
                 HostName = "Tsimerman1",
-                HostKey = 1,
                 Units = new List<HostingUnit>()
                 {
                     new HostingUnit()
                     {
                         UnitName = "צימר נוף הגליל",
                         Rooms = 3,
-                        HasSwimmingPool = true,
+                        IsSwimingPool = true,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string>
                         {
-                           
                            "https://img.mako.co.il/2014/10/13/asnbsdnsn05_c.jpg",
                            "https://img.mako.co.il/2014/12/16/Achuza1_i.jpg"
                         }
@@ -49,7 +47,7 @@ namespace dotNet5780_03_0761_6658
                     {
                         UnitName = "צימר על המדבר",
                         Rooms = 2,
-                        HasSwimmingPool = false,
+                        IsSwimingPool = false,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string>
                         {
@@ -60,18 +58,17 @@ namespace dotNet5780_03_0761_6658
                     },
                 }
             };
-            hostsList.Add(host);
-           host = new Host()
+            HostsList.Add(host);
+            host = new Host()
             { 
                 HostName = "Tsimerman2",
-                HostKey = 2,
                 Units = new List<HostingUnit>()
                 {
                     new HostingUnit()
                     {
                         UnitName = "צימר רחש גלים",
                         Rooms = 3,
-                        HasSwimmingPool = false,
+                        IsSwimingPool = false,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string> {"https://pic.rrr.co.il/images/rahashagalim/10%20(Big).jpg",
                         "https://pic.rrr.co.il/images/rahashagalim/4%20(Big).jpg"}
@@ -80,25 +77,24 @@ namespace dotNet5780_03_0761_6658
                     {
                         UnitName = "צימר חול המדבר",
                         Rooms = 2,
-                        HasSwimmingPool = true,
+                        IsSwimingPool = true,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string> { "http://www.maxtron.co.il/tblgalilw/2.jpg",
                         "http://www.maxtron.co.il/tblgalilw/1(5).JPG" }
                     },
                 }
             };
-           hostsList.Add(host);
-           host =  new Host()
+            HostsList.Add(host);
+            host = new Host()
             {
                 HostName = "Tsimerman3",
-                HostKey = 3,
                 Units = new List<HostingUnit>()
                 {
                     new HostingUnit()
                     {
                         UnitName = "צימר חוף הים",
                         Rooms = 3,
-                        HasSwimmingPool = true,
+                        IsSwimingPool = true,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string> {"https://pic.rrr.co.il/images/biktothagefen/33%20(Big).jpg",
                         "https://pic.rrr.co.il/images/biktothagefen/28%20(Big).jpg"}
@@ -107,16 +103,16 @@ namespace dotNet5780_03_0761_6658
                     {
                         UnitName = "צימר מדבר הנגב",
                         Rooms = 2,
-                        HasSwimmingPool = false,
+                        IsSwimingPool = false,
                         AllOrders = new List<DateTime>(),
                         Uris = new List<string> {"https://pic.rrr.co.il/images/oazis/21.jpg",
                         "https://pic.rrr.co.il/images/oazis/1.jpg"},
                     },
                 }
             };
-           hostsList.Add(host);
-            cbHostList.ItemsSource = hostsList;
-            //cbHostList.DisplayMemberPath = "HostsName";
+            HostsList.Add(host);
+            cbHostList.ItemsSource = HostsList;
+            cbHostList.DisplayMemberPath = "HostName";
             cbHostList.SelectedIndex = 0;
         }
         
@@ -129,7 +125,7 @@ namespace dotNet5780_03_0761_6658
         private void InitializeHost(int index)
         {
             MainGrid.Children.RemoveRange(1, 3);
-            currentHost = hostsList[index];
+            currentHost = HostsList[index];
             UpGrid.DataContext = currentHost;
             for (int i = 0; i < currentHost.Units.Count; i++)
             {

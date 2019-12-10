@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:dotNet5780_03_0761_6658"
         mc:Ignorable="d"
         Title="מאגר הצימרים הגדול" Height="640" Width="800">
-    <Grid Name ="MainGrid">
+    <Grid Name ="MainGrid" Background="WhiteSmoke">
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="200*"/>
@@ -18,15 +18,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
-           <ComboBox Name="cbHostList"
-                      HorizontalAlignment="Stretch"
-                     
-                      VerticalAlignment="Stretch" 
-                      Grid.Column="0" SelectionChanged="CbHostList_SelectionChanged_1"
-                      Text="... Select Team ..." DisplayMemberPath="HostName"
-          SelectedValuePath="HostKey"  />
-            <TextBox Name ="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="{Binding Path = HostName}" VerticalAlignment="Stretch" FontSize="22" FontFamily="David"/>
+            <ComboBox Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" SelectionChanged="CbHostList_SelectionChanged_1" FontSize="20" />
+            <TextBox Name ="tbHostName" Grid.Column="1" HorizontalAlignment="Stretch" Text="{Binding Path=HostName}" VerticalAlignment="Stretch" FontSize="20" AcceptsReturn="True"/>
         </Grid>
 
     </Grid>
